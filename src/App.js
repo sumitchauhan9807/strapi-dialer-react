@@ -1,10 +1,24 @@
-import './assets/css/main.css'
+import 'src/assets/css/elementor.css'
+
+import 'src/assets/css/main.css'
+// import 'src/assets/css/google-fonts.css'
+import 'src/assets/css/public.css'
+import 'src/assets/css/all.css'
+
+
+
+
 import Navigation from 'src/components/Navigation'
+import Partners from 'src/components/Partners'
+import TopServices from 'src/components/TopServices'
+import Operations from 'src/components/Operations'
+
+
 function App() {
   return (
     <div>
       <Navigation/>
-       
+      
         <div data-elementor-type="wp-page" data-elementor-id={41628} className="elementor elementor-41628" data-elementor-post-type="page">
           <section className="elementor-section elementor-top-section elementor-element elementor-element-241cf51 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="241cf51" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
             <div className="elementor-container elementor-column-gap-default">
@@ -99,123 +113,10 @@ function App() {
               </div>
             </div>
           </section>
+        {/* <Partners/> */}
+        <TopServices/>
+        <Operations/>
         </div>
-        <nav data-elementor-type="popup" data-elementor-id={35888} className="elementor elementor-35888 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInRight&quot;,&quot;entrance_animation_mobile&quot;:&quot;slideInLeft&quot;,&quot;exit_animation&quot;:&quot;slideInRight&quot;,&quot;exit_animation_mobile&quot;:&quot;slideInLeft&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;classes&quot;:&quot;mobile-menu&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
-          <section className="elementor-section elementor-top-section elementor-element elementor-element-154bffc4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="154bffc4" data-element_type="section">
-            <div className="elementor-container elementor-column-gap-default">
-              <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3be8b92d" data-id="3be8b92d" data-element_type="column">
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div className="elementor-element elementor-element-52f6674 elementor-widget elementor-widget-jet-custom-menu" data-id="52f6674" data-element_type="widget" data-widget_type="jet-custom-menu.default">
-                    <div className="elementor-widget-container">
-                      <div className="menu-2023-mobile-menu-container">
-                        <div className="jet-custom-nav jet-custom-nav--dropdown-right-side jet-custom-nav--animation-move-down">
-                          <div className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41628 current_page_item jet-custom-nav__item jet-custom-nav__item-43809"><a href="https://callcenterstudio.com/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Home</span></span></a></div>
-                          <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-42829"><a href="https://callcenterstudio.com/why-call-center-studio/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Why CCS</span></span></a></div>
-                          <div className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children jet-custom-nav__item jet-custom-nav__item-35893">
-                            <a href="#" className="jet-custom-nav__item-link"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Product</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                            <div className="jet-custom-nav__sub">
-                              <div className="two-level menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-35896"><a href="https://callcenterstudio.com/contact-center-software/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Contact Center Software</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-35901"><a href="https://callcenterstudio.com/employee-workforce-engagement-platform/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Workforce Engagement Platform</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children jet-custom-nav__item jet-custom-nav__item-35934">
-                                <a href="https://callcenterstudio.com/features-and-benefits/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Features &amp; Benefits</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                                <div className="jet-custom-nav__sub">
-                                  <div className="menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-40613"><a href="https://callcenterstudio.com/business-phone-number/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Business Phone Number ​</span></span></a></div>
-                                </div>
-                              </div>
-                              <div className="two-level menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-35945"><a href="https://callcenterstudio.com/omni-channel-customer-service/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Omni-Channel Contact Center</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-35952"><a href="https://callcenterstudio.com/automated-customer-support/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Automation Customer Service</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-35955"><a href="https://callcenterstudio.com/customer-experience-software/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Customer Experience Analytics</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children jet-custom-nav__item jet-custom-nav__item-35958">
-                                <a href="https://callcenterstudio.com/integrations/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Integration</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                                <div className="jet-custom-nav__sub">
-                                  <div className="three-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-35959"><a href="https://callcenterstudio.com/api/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">API &amp; SDK</span></span></a></div>
-                                  <div className="three-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-35960"><a href="https://callcenterstudio.com/crm/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">CRM</span></span></a></div>
-                                  <div className="three-level menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-35961"><a href="https://callcenterstudio.com/uc/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">UC</span></span></a></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children jet-custom-nav__item jet-custom-nav__item-47300">
-                            <a href="#" className="jet-custom-nav__item-link"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">AI Products</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                            <div className="jet-custom-nav__sub">
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-47302"><a href="https://callcenterstudio.com/ai-chat/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">AI Chat</span></span></a></div>
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-47304"><a href="https://callcenterstudio.com/chatbot/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Chatbot</span></span></a></div>
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-47621"><a href="https://callcenterstudio.com/accent-neutralization/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Accent Neutralization</span></span></a></div>
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-47301"><a href="https://callcenterstudio.com/ai-avatar/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">AI Avatar</span></span></a></div>
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-47306"><a href="https://callcenterstudio.com/cx-insights/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">CX Insights</span></span></a></div>
-                              <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-48101"><a href="https://callcenterstudio.com/agent-assist/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Agent Assist</span></span></a></div>
-                            </div>
-                          </div>
-                          <div className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children jet-custom-nav__item jet-custom-nav__item-35911">
-                            <a href="https://callcenterstudio.com/solutions/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Solutions</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                            <div className="jet-custom-nav__sub">
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36018"><a href="https://callcenterstudio.com/solutions/health/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Heatlhcare</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36019"><a href="https://callcenterstudio.com/solutions/ecommerce/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">eCommerce</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36020"><a href="https://callcenterstudio.com/solutions/insurance/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Insurance</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36021"><a href="https://callcenterstudio.com/solutions/logistics/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Logistics &amp; Transport</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36022"><a href="https://callcenterstudio.com/solutions/airline/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Airline Solutions</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36023"><a href="https://callcenterstudio.com/solutions/energy/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Energy</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36024"><a href="https://callcenterstudio.com/solutions/outsource/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Outsource</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36025"><a href="https://callcenterstudio.com/solutions/automotive/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Automotive</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36026"><a href="https://callcenterstudio.com/solutions/real-estate/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Real Estate</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36027"><a href="https://callcenterstudio.com/solutions/tourism/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Hospitality &amp; Travel</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36028"><a href="https://callcenterstudio.com/solutions/education/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Education</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36029"><a href="https://callcenterstudio.com/solutions/technology/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Technology</span></span></a></div>
-                            </div>
-                          </div>
-                          <div className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children jet-custom-nav__item jet-custom-nav__item-35912">
-                            <a href="#" className="jet-custom-nav__item-link"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Resources</span></span><i className="jet-dropdown-arrow  fa fa-chevron-right" /></a>
-                            <div className="jet-custom-nav__sub">
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36030"><a href="https://callcenterstudio.com/blog/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Blog</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36031"><a href="https://callcenterstudio.com/whitepapers/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">E-books / Whitepapers</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36032"><a href="https://callcenterstudio.com/api/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Documentation for Dev</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36033"><a href="https://callcenterstudio.com/faq/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">FAQ</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36034"><a href="https://callcenterstudio.com/testimonials/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Customer Reviews</span></span></a></div>
-                              <div className="menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-49768"><a href="https://callcenterstudio.com/glossary/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Contact Center Glossary</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36035"><a href="https://callcenterstudio.com/partnerships-program/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Partners</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36036"><a href="https://callcenterstudio.com/success-stories/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Case Studies</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36037"><a href="https://callcenterstudio.com/contact-us/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Contact Us</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36038"><a href="https://callcenterstudio.com/customer-support/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Support Center</span></span></a></div>
-                              <div className="two-level menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-36039"><a target="_blank" href="https://www.linkedin.com/jobs/call-center-studio-jobs-worldwide" className="jet-custom-nav__item-link" data-wpel-link="external" rel="nofollow external noopener noreferrer"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">Career</span></span></a></div>
-                              <div className="menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-41295"><a href="https://callcenterstudio.com/news/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label sub-level-label">News</span></span></a></div>
-                            </div>
-                          </div>
-                          <div className="menu-item menu-item-type-post_type menu-item-object-page jet-custom-nav__item jet-custom-nav__item-48018"><a href="https://callcenterstudio.com/pricing/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Pricing</span></span></a></div>
-                          <div className="menu-item menu-item-type-custom menu-item-object-custom jet-custom-nav__item jet-custom-nav__item-48019"><a href="https://callcenterstudio.com/partnerships-program/" className="jet-custom-nav__item-link" data-wpel-link="internal"><span className="jet-menu-link-text"><span className="jet-custom-item-label top-level-label">Partners</span></span></a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="elementor-element elementor-element-642c7027 elementor-widget elementor-widget-spacer" data-id="642c7027" data-element_type="widget" data-widget_type="spacer.default">
-                    <div className="elementor-widget-container">
-                      <div className="elementor-spacer">
-                        <div className="elementor-spacer-inner" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="elementor-element elementor-element-14f138f3 elementor-widget__width-auto elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="14f138f3" data-element_type="widget" data-widget_type="button.default">
-                    <div className="elementor-widget-container">
-                      <div className="elementor-button-wrapper">
-                        <a className="elementor-button elementor-button-link elementor-size-sm" href="https://callcenterstudio.com/get-a-quote-zoho/" data-wpel-link="internal">
-                          <span className="elementor-button-content-wrapper">
-                            <span className="elementor-button-text">Get Starssted</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="elementor-element elementor-element-3b0e31db elementor-widget elementor-widget-spacer" data-id="3b0e31db" data-element_type="widget" data-widget_type="spacer.default">
-                    <div className="elementor-widget-container">
-                      <div className="elementor-spacer">
-                        <div className="elementor-spacer-inner" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </nav>
       </div>
   );
 }

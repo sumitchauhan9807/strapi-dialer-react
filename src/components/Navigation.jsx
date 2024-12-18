@@ -2,15 +2,22 @@ import { useRef } from "react";
 
 function Navigation() {
 
-  const inputRef = useRef(null);
-
-  const showSubNav = (e) => {
-    console.log(inputRef)
-    inputRef.current.classList.add('jet-menu-hover')
+  const dropdown1 = useRef(null);
+  const dropdown2 = useRef(null);
+  const dropdown3 = useRef(null);
+  const dropdown4 = useRef(null);
+  
+  const showSubNav = (dropdownRef) => {
+    mouseLeave()
+    console.log(dropdownRef)
+    dropdownRef.current.classList.add('jet-menu-hover')
   }
 
-  const mouseLeave = () =>{ 
-    inputRef.current.classList.remove('jet-menu-hover')
+  const mouseLeave = () =>{
+    dropdown1.current.classList.remove('jet-menu-hover')
+    dropdown2.current.classList.remove('jet-menu-hover')
+    dropdown3.current.classList.remove('jet-menu-hover')
+    dropdown4.current.classList.remove('jet-menu-hover')
   }
   return (
 <>
@@ -85,8 +92,8 @@ function Navigation() {
                                           </div>
                                         </a>
                                       </li>
-                                      <div  onMouseOver={(e)=> showSubNav(e)}>
-                                      <li  ref={inputRef}   className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-mega-menu-position-relative-item jet-regular-item jet-menu-item-has-children jet-menu-item-27031">
+                                      
+                                      <li onMouseOver={(e)=> showSubNav(dropdown1)}  ref={dropdown1}   className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-mega-menu-position-relative-item jet-regular-item jet-menu-item-has-children jet-menu-item-27031">
                                         <a className="top-level-link">
                                           <div className="jet-menu-item-wrapper">
                                             <div className="jet-menu-title">Product</div>
@@ -903,8 +910,8 @@ function Navigation() {
                                           </div>
                                         </div>
                                       </li>
-                                      </div>
-                                      <li id="jet-menu-item-47206" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-mega-menu-position-relative-item jet-regular-item jet-menu-item-has-children jet-menu-item-47206 ">
+                                      
+                                      <li onMouseOver={(e)=> showSubNav(dropdown2)} ref={dropdown2} id="jet-menu-item-47206" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-mega-menu-position-relative-item jet-regular-item jet-menu-item-has-children jet-menu-item-47206 ">
                                         <a href="#" className="top-level-link">
                                           <div className="jet-menu-item-wrapper">
                                             <div className="jet-menu-title">AI Products</div>
@@ -1118,7 +1125,7 @@ function Navigation() {
                                           </div>
                                         </div>
                                       </li>
-                                      <li id="jet-menu-item-27032" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-27032 ">
+                                      <li onMouseOver={(e)=> showSubNav(dropdown3)} ref={dropdown3} id="jet-menu-item-27032" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-27032 ">
                                         <a className="top-level-link">
                                           <div className="jet-menu-item-wrapper">
                                             <div className="jet-menu-title">Solutions</div>
@@ -1637,7 +1644,7 @@ function Navigation() {
                                           </div>
                                         </div>
                                       </li>
-                                      <li id="jet-menu-item-27033" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-27033">
+                                      <li onMouseOver={(e)=> showSubNav(dropdown4)} ref={dropdown4} id="jet-menu-item-27033" className="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-27033">
                                         <a className="top-level-link">
                                           <div className="jet-menu-item-wrapper">
                                             <div className="jet-menu-title">Resources</div>
@@ -1980,7 +1987,7 @@ function Navigation() {
                             <div className="elementor-widget-container">
                               <style dangerouslySetInnerHTML={{__html: "/*! elementor - v3.18.0 - 08-12-2023 */\n                            .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=\".svg\"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}\n                          " }} />
                               <a href="https://callcenterstudio.com" data-wpel-link="internal">
-                                <img src="https://callcenterstudio.com/wp-content/uploads/2021/05/Primary-Logo-SVG.svg" className="attachment-full size-full wp-image-21" alt="Call Center Studio Primary Logo" />								</a>
+                                <img style={{width:'66px'}} src="https://backend.globalchat.us/uploads/logo_58c930c6d8.png" className="attachment-full size-full wp-image-21" alt="Call Center Studio Primary Logo" />								</a>
                             </div>
                           </div>
                           <div className="elementor-element elementor-element-04e047d elementor-align-right elementor-hidden-desktop elementor-widget-mobile__width-auto elementor-widget elementor-widget-button" data-id="04e047d" data-element_type="widget" data-widget_type="button.default">
